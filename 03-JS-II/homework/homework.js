@@ -49,13 +49,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if  (idioma === 'aleman') {
-    return 'Guten Tag';
+    return 'Guten Tag!';
   } 
   else if (idioma === 'mandarin') {
-    return 'Ni Hao';
+    return 'Ni Hao!';
   }
   else if (idioma === 'ingles') {
-    return 'Hello';
+    return 'Hello!';
   } else {
     return 'Hola';
   }
@@ -88,10 +88,10 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero === 10 || numero === 5) {
-    return 'true';
+    return true;
   
   } else {
-    return 'false';
+    return false;
   }
 }
 
@@ -100,9 +100,9 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero < 50 && numero > 20) {
-    return 'true';
+    return true;
   } else {
-    return 'false';
+    return false;
   }
 }
 
@@ -141,16 +141,16 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1 > num2 && num1 > num3 && num1 > 0) {
-    return 'Numero 1 es mayor y positivo';
+  if  (num1 < 0 || num2 < 0 || num3 < 0) {
+    return 'Hay negativos';
   } else if (num1 === 0 || num2 === 0 || num3 === 0) {
     return 'Error';
   } else if (num3 > num2 && num3 > num1) {
     return num3 + 1;
-  } else if (num1 < 0 || num2 < 0 || num3 < 0) {
-    return 'Hay negativos';
+  } else if (num1 > num2 && num1 > num3 && num1 > 1) {
+    return 'Número 1 es mayor y positivo';
   } else {
-    return 'false'
+    return false;
   }
 }
 
