@@ -61,7 +61,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join ('');
+  return palabras.join (' ');
 }
 
 
@@ -70,7 +70,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (var i=0; i < array.length; i++) {
-    if (array[i] === 0) {
+    if (array[i] === elemento) {
       return true;
     }
   }
@@ -155,7 +155,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia ===1 || numeroDeDia === 7) {
     return 'Es fin de semana';
 } else if (numeroDeDia > 1 && numeroDeDia < 7) {
-return 'Es dia laboral';
+return 'Es dia Laboral';
 } else {
     return 'ERROR';
 } 
@@ -215,7 +215,7 @@ function mayorACien(array) {
   // Tu código:
   var numeroB = [];
   for ( var i = 0; i < array.length; i++) {
-      if ( array[i] > 100 && array[i] < 200) {
+      if ( array[i] > 100 && array[i] < 201) {
           numeroB.push(array[i]);
       }
   }
@@ -243,7 +243,7 @@ function breakStatement(numero) {
     }
     }
     if (arrayNuevo.length < 10) {
-      return 'Se interumpio la ejecucuion';
+      return 'Se interrumpió la ejecucuión';
     }
     else {
       return arrayNuevo;
