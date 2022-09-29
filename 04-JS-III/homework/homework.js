@@ -243,7 +243,7 @@ function breakStatement(numero) {
     }
     }
     if (arrayNuevo.length < 10) {
-      return 'Se interrumpió la ejecucuión';
+      return 'Se interrumpió la ejecución';
     }
     else {
       return arrayNuevo;
