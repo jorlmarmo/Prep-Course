@@ -10,7 +10,7 @@ function crearGato (nombre, edad) {
     nombre: nombre,
     edad: edad,
     meow: function() {
-      return 'Meow';
+      return 'Meow!';
     }
   };
   return objeto;
@@ -108,7 +108,7 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // Tu código:
   usuario.amigos.push(nuevoAmigo);
-  return usuarios;
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -132,7 +132,7 @@ function sumarLikesDeUsuario (usuario) {
   // Tu código:
   var suma = 0;
    for (var i = 0; i < usuario.posts.length; i++) {
-   suam = suma + usuario.posts.length[i].likes;
+   suam = suma + usuario.posts[i].likes;
    }
    return suma;
 }
@@ -148,7 +148,7 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
   producto.calcularPrecioDescuento = function() {
-    this.precio - (this.precio - this.porcentajeDeDescuento)
+    this.precio - (this.precio * this.porcentajeDeDescuento)
   }
   return producto;
 
