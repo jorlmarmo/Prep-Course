@@ -1,9 +1,9 @@
-h1 {color:aqua;}
+h1 {color:rgb(4, 37, 37);}
   img{width:400px;}
    #thirdDiv{ 
     height: 600px;
     width: 500px;
-    background-color: rgb(13, 221, 13);
+    background-color: rgb(221, 173, 13);
     }
     #spanId{
     font-size: 18px;
